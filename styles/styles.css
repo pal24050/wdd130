@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 :root {
     --background: rgb(178, 176, 176);
     --nav-font: 'Verdana', sans-serif;
@@ -5,9 +10,8 @@
     --title-font: 'Georgia', serif;
     --paragraph-font: 'Tahoma', sans-serif;
 }
-
 nav {
-    background-color: rgb(29, 146, 164);
+    background-color: rgb(102, 190, 203);
     padding: 10px;
 }
 nav a {
@@ -27,29 +31,30 @@ main img {
     border: 1px solid black;
     padding: 2px;
     box-shadow: 0 0 30px gray;
-    margin-left: 20px
+    float: right;
+    margin: 0 0 1rem 1rem;
 }
 p {
-    padding: 20px;
+    padding: 5px 0 20px 20px;
     font-family: var(--paragraph-font);
+    margin: 1 rem;
 }
 main {
     max-width: 840px;
-    background-color: var(--background);
 }
 aside {
     width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.2); /*1*/
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
     text-align: center;
     font-family: var(--paragraph-font);
+    position: relative;
 }
-h2 {
+aside h2 {
     font-family: var(--title-font);
-    color: rgb(32, 30, 109);
+    color: rgb(245, 245, 248);
+    padding: 0 20px;
+    position: absolute;
+    top: 15px;
+    left: 50px;
 }
 aside img {
     width: 200px;
@@ -60,4 +65,15 @@ footer {
     border-top: 1px solid #000;
     text-align: center;
     font-family: var(--footer-font);
+}
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    border: 1px solid rgb(178, 176, 176);
+    padding: 1rem;
+    background-color:rgb(210, 243, 246);
+    color: rgb(0, 0, 0);
+}
+.indent {
+    padding-left: 2rem;
 }
