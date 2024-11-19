@@ -37,7 +37,7 @@ main img {
 p {
     padding: 5px 0 20px 20px;
     font-family: var(--paragraph-font);
-    margin: 1 rem;
+    margin: 1rem;
 }
 main {
     max-width: 840px;
