@@ -24,6 +24,19 @@ header nav {
         border: 1px solid black;
 }
 
+.hero {
+        position: relative;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+}
+
+.hero img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+}
+
 .hero h1 {
         color: var(--accent-color-2);
         font-size: 3.5rem;
@@ -31,42 +44,23 @@ header nav {
         font-family: sigmar one, static;
         text-align: center;
         position: absolute;
-        top: 20%;
-        left: 50%;
+        top: 0%;
+        left: 30%;
+        background-color: rgba(0, 0, 0, .3);
 }
 
-.hero div {
-        position: relative;
-        width: 100%;
-        height: 400px;
-        overflow: hidden;
+.hero h2 {
+        text-align: center;
 }
-
-.hero img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-}
-
-h2 {
-    text-align: center;
-    vertical-align: middle;
-    font-size: 2.5rem;
-    font-family: sigmar one, static;
-    color: var(--primary-color);
-    background-color: var(--secondary-color);
-    border-bottom: 5px solid var(--accent-color-1);
-} 
 
 .hero article {
         position: relative;
-        background-color: var(--secondary-color);
-        max-width: 100%;
-        padding: 0 20px;
-        border: 2px solid black;
+        max-width: 80%;
+        margin: 20px auto;
         font-family: kanit, static;
         font-size: 20px;
-        color: var(--accent-color-2);
+        color: var(--secondary-color);
+        background-color:rgba(0, 0, 0, .3)
 }
 
 .hero article img {
@@ -78,10 +72,24 @@ h2 {
         padding: 1rem;
 }
 
-section h2 {
+.hero article h2 {
         padding-bottom: 0;
+        background-color: var(--secondary-color);
+        max-width: 100%;
+        padding: 0 20px;
+        border: 2px solid black;
+        font-family: kanit, static;
+        font-size: 20px;
+        color: var(--accent-color-2);
 }
 
+section h2 {
+        text-align: center;
+        font-family: sigmar one, static;
+        color: var(--primary-color);
+        background-color: var(--secondary-color);
+        border-bottom: 5px solid var(--accent-color-1);
+}
 section img {
         width: 450px;
         height: auto;
@@ -101,7 +109,7 @@ section p {
 footer {
         position: relative;
         bottom: 0;
-        border-top: 3px solid #000;
+        border-top: 3px solid var(--accent-color-1);
         padding: .5rem;
         margin: 2rem 0;
         color: var(--primary-color);
