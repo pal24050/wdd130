@@ -1,8 +1,8 @@
 body {
-    primary-color: 6e8894;
-    secondary-color: 8b5d33;
-    accent1-color: 141b41;
-    accent2-color: 
+    --primary-color: 6e8894;
+    --secondary-color: 8b5d33;
+    --accent1-color: 141b41;
+}
 
 * {
     margin: 0;
