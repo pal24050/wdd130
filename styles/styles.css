@@ -17,19 +17,27 @@ body {
     --paragraph-font: 'Tahoma', sans-serif;
 }
 nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     background-color: rgb(102, 190, 203);
     padding: 10px;
 }
 nav a {
     color: white;
-    display: block;
     padding: 20px;
     font-family: var(--nav-font);
+    font-size: 1.2rem;
+    font-weight: 500;
+    display: block;
+    text-decoration: none;
 }
 h1 {
     color: rgb(32, 30, 109);
     padding: 20px 20px;
     font-family: var(--title-font);
+    border-bottom: 1.5px solid rgb(32, 30, 109);
+    margin: 20px;
 }
 main img {
     width: 150px;
@@ -46,24 +54,27 @@ p {
     margin: 1rem;
 }
 main {
-    max-width: 840px;
+    grid-column: 2/3;
+    margin: 1rem;
 }
 aside {
     width: 20rem;
     text-align: center;
     font-family: var(--paragraph-font);
     position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 aside h2 {
     font-family: var(--title-font);
     color: rgb(245, 245, 248);
-    padding: 0 20px;
+    padding: 5px 20px;
     position: absolute;
     top: 15px;
     left: 50px;
 }
 aside img {
-    width: 200px;
+    width: 250px;
     height: auto;
 }
 footer {
@@ -71,7 +82,14 @@ footer {
     border-top: 1px solid #000;
     text-align: center;
     font-family: var(--footer-font);
+    padding-bottom: 30px;
 }
+
+header, .grid, footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
 /* Class Selectors */
 .box {
     margin: 1rem;
@@ -82,4 +100,8 @@ footer {
 }
 .indent {
     padding-left: 2rem;
+}
+.grid {
+    display: grid;
+    align-items: center;
 }
