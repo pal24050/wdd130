@@ -56,15 +56,16 @@ header nav {
 }
 
 .hero article {
-        position: relative;
-        top:20%;
+        position: absolute;
+        top: 30%;
+        left: 10%;
         max-width: 80%;
         margin: 20px auto;
         padding: 10px 20px;
         font-family: kanit, static;
         font-size: 20px;
         color: var(--secondary-color);
-        background-color:rgba(0, 0, 0, .3)
+        background-color:rgba(247, 244, 244, 0.7)
 }
 
 .hero article img {
