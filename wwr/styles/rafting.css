@@ -132,7 +132,8 @@ nav a {
 }
 
 .image-container img {
-        scale: 75%;
+        transform: scale(0.75);
+        transform-origin: center;
         object-fit: cover;
         height: auto;
         width: auto;
