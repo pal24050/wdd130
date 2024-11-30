@@ -57,17 +57,15 @@ nav a {
 
 .hero h1 {
         color: var(--accent-color-2);
-        font-size: 3.5rem;
+        font-size: 4vw;
         text-shadow: 2px 3px 4px rgba(0, 0, 0, .7);
         font-family: sigmar one, static;
-        text-align: center;
         padding: 20px;
         position: absolute;
-        display: flex;
         align-content: center;
         top: 5%;
         left: 25%;
-        background-color: rgba(0, 0, 0, .3);
+        background-color: rgba(0, 0, 0, 0.3);
 }
 
 .hero article {
@@ -80,7 +78,7 @@ nav a {
         font-family: kanit, static;
         font-size: 25px;
         color: var(--secondary-color);
-        background-color:rgba(247, 244, 244, 0.7)
+        background-color:rgba(247, 244, 244, 0.8)
 }
 
 .hero article img {
@@ -100,6 +98,7 @@ nav a {
         box-sizing: border-box;
         padding: 40px 20px;
         border-top: 4px solid var(--accent-color-1);
+        margin-top: 0;
 }
 
 .container p {
@@ -110,7 +109,6 @@ nav a {
         color: var(--accent-color-2);
         padding: 10px;   
         align-content: center;  
-
 }        
 
 .image-container {
