@@ -1,0 +1,213 @@
+:root {
+    --primary-color: #6e8894; /* slate gray */
+    --secondary-color: #2a2f4f; /* space cadet */
+    --accent-color-1: #8f6741; /* raw umber */
+    --accent-color-2: #ced4d3; /* floral white */
+}
+
+body {
+        font-family: kanit, static;
+}
+
+h1 h2 {
+        font-family: Sigmar one; 
+}
+   
+header {
+        font-family: kanit, static;
+        background-color: var(--accent-color-1); 
+}
+ 
+header img {
+        margin: 20px 0 20px 120px;
+        border: 1px solid black;
+        width: 100px;
+        height: auto;
+}
+
+header nav {
+       border: 1px solid black;
+}
+
+.navigation {
+       display: flex;
+       float: right;
+       margin-right: 100px;
+       margin-top: 50px;
+}
+
+nav a {
+        display: block;
+        padding: 2px 30px;
+        text-decoration: none;
+}
+
+.hero {
+        position: relative;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+}
+
+.hero img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+}
+
+.hero h1 {
+        color: var(--accent-color-2);
+        font-size: 3.5rem;
+        text-shadow: 2px 3px 4px rgba(0, 0, 0, .7);
+        font-family: sigmar one, static;
+        text-align: center;
+        padding: 20px;
+        position: absolute;
+        display: flex;
+        align-content: center;
+        top: 5%;
+        left: 25%;
+        background-color: rgba(0, 0, 0, .3);
+}
+
+.hero article {
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        max-width: 80%;
+        margin: 0 auto;
+        padding: 30px;
+        font-family: kanit, static;
+        font-size: 25px;
+        color: var(--secondary-color);
+        background-color:rgba(247, 244, 244, 0.7)
+}
+
+.hero article img {
+        position: relative;
+        float: right;
+        width: 200px;
+        height: auto;
+        align-content: center;
+        justify-content: center;
+        padding-bottom: 1.5rem;
+}
+
+.container {
+        display: flex;
+        width: 100%;
+        background-color: var(--secondary-color);
+        box-sizing: border-box;
+        padding: 40px 20px;
+        border-top: 4px solid var(--accent-color-1);
+}
+
+.container p {
+        margin: 0 auto;
+        font-family: kanit, static;
+        font-size: 20px;
+        line-height: 1.6;
+        color: var(--accent-color-2);
+        padding: 10px;   
+        align-content: center;  
+
+}        
+
+.image-container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        max-width: fit-content;   
+}
+
+.image-container h2 {
+        position: absolute;
+        top: -1%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: var(--accent-color-2);
+        font-family: sigmar one, static;
+        font-size: 2rem;
+        margin: 0;
+        text-align: center;
+}
+
+.image-container img {
+        scale: 75%;
+        object-fit: cover;
+        height: auto;
+        width: auto;
+        border-radius: 5px;
+}
+
+h2, figure {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sigmar one, static;
+        color: var(--primary-color);
+} 
+
+.adventure-section {
+        display: grid;
+        max-width: 100%;
+        padding: 20px;
+        background-color: var(--accent-color-2);
+        border-top: 4px solid var(--accent-color-1);
+        
+}
+
+.adventure-section h2 {
+        margin-bottom: 20pxl;
+        text-align: center;
+        font-size: 2rem;
+}
+
+ .image-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        justify-content: space-evenly;
+        gap: 20px;
+        width: 100%;
+        max-width: 100%;     
+ }
+
+ .image-grid figure img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+ }
+
+ .image-grid figure {
+        text-align: center;
+        font-size: 1rem;
+        background-color: var(--secondary-color);
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+ }
+
+ .image-grid figure:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+        border-top: 3px solid var(--accent-color-1);
+        margin: 0;
+        color: var(--primary-color);
+        background-color: var(--accent-color-2);
+        font-family: kanit, static, bold;
+        justify-content: center;
+}
+
+footer nav a {
+        text-decoration: none;
+        float:right;
+}
+ 
+
+        
+
