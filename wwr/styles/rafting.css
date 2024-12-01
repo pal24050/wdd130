@@ -50,6 +50,7 @@ nav a {
         width: 100%;
         height: auto;
         overflow: hidden;
+        align-content: center;
 }
 
 .hero img {
@@ -67,14 +68,14 @@ nav a {
         position: absolute;
         align-content: center;
         top: 5%;
-        left: 25%;
+        left: 18%;
         background-color: rgba(0, 0, 0, 0.3);
 }
 
 .hero article {
         position: absolute;
         top: 30%;
-        left: 10%;
+        left: 8%;
         max-width: 80%;
         margin: 0 auto;
         padding: 30px;
