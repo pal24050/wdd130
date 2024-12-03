@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 130 | HTML FORM - USER POLL</title>
+</head>
+<body>
+    <header>
+        <h1>WDD 130 | Kimberly Palmer | HTML Form - User Poll</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <!-- you can enter label information in one of two ways -->
+                    <label>Full Name: <input type="text" name="fullname"></label>
+                    <label for="useremail">Email:</label>
+                    <input type="email" id="useremail" name="useremail">
+            </fieldset>
+            <fieldset>
+                <legend>Questions</legend>
+                    <label for="brower">What is your favorite browser?</label>
+                    <select id="brower" name="brower">
+                        <option value="firefox">Firefox</option>
+                        <option value="chrome">Chrome</option>
+                        <option value="safari">Safari</option>
+                        <option value="edge">Edge</option>
+                    </select>
+                    <label for="pets">Do you have a household pet?</label>
+                    <input type="checkbox" id="pet" name="pet">
+                    <label for="feedback">List the places you have lived:</label>
+                    <textarea id="feedback" name="feedback" rows="4" placeholder="Enter places you have lived here with city, state or country"></textarea>
+            </fieldset>
+            <button>Submit</button>
+        </form>
+    </main>
+    <footer>
+        <p>©️2025 | HTML Form - User Poll Activity | Kimberly Palmer</p>
+    </footer>
+</body>
+</html>
