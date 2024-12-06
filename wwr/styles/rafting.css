@@ -5,13 +5,13 @@
     --accent-color-2: #ced4d3; /* floral white */
 }
 
-body {
+/* body {
         font-family: kanit, static;
 }
 
 h1 h2 {
         font-family: Sigmar one; 
-}
+} */
    
 header {
         background-color: #8f6741;
@@ -20,17 +20,18 @@ header {
 
 .grid-container {
         display: grid;
-        grid-template-columns: 1fr 4fr ;
+        grid-template-columns: 1fr 1fr 1fr 4fr;
+        grid-template-rows: 1fr;
         grid-gap: 100px;
         align-items: center;
 }
 
-img {
-        margin: 20px 0 20px 120px;
-        grid-column: 1/2;
+.grid-container img {
+        grid-column: 2/3;
         grid-row: 1/2;
+        padding: 20px 0 20px 120px;
         border: 1.5px solid black;
-        width: 100px;
+        width: 80px;
         height: auto;
         border-radius: 4px;
 }
@@ -38,7 +39,7 @@ img {
 .navigation {
         display: flex;
         align-content: center;
-        grid-column: 2/3;
+        grid-column: 4/5;
         grid-row: 1/2; 
         margin: 40px 40px;
         float: right;
@@ -205,6 +206,7 @@ figure {
         height: auto;
         object-fit: cover;
         border-radius: 3px;
+        flex: 1 1 100%;
  }
 
  .image-grid figure {

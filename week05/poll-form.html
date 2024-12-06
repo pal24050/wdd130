@@ -3,11 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900O&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/poll-form.css">
     <title>WDD 130 | HTML FORM - USER POLL</title>
+    
 </head>
 <body>
     <header>
-        <h1>WDD 130 | Kimberly Palmer | HTML Form - User Poll</h1>
+        <h1>WDD 130 | HTML Form - User Poll</h1>
     </header>
     <main>
         <form>
@@ -15,24 +20,23 @@
                 <legend>Contact Information</legend>
                 <!-- you can enter label information in one of two ways -->
                     <label>Full Name: <input type="text" name="fullname"></label>
-                    <label for="useremail">Email:</label>
-                    <input type="email" id="useremail" name="useremail">
+                    <label>Email: <input type="email" name="useremail"></label> 
             </fieldset>
             <fieldset>
                 <legend>Questions</legend>
-                    <label for="brower">What is your favorite browser?</label>
-                    <select id="brower" name="brower">
-                        <option value="firefox">Firefox</option>
-                        <option value="chrome">Chrome</option>
-                        <option value="safari">Safari</option>
-                        <option value="edge">Edge</option>
-                    </select>
-                    <label for="pets">Do you have a household pet?</label>
-                    <input type="checkbox" id="pet" name="pet">
-                    <label for="feedback">List the places you have lived:</label>
-                    <textarea id="feedback" name="feedback" rows="4" placeholder="Enter places you have lived here with city, state or country"></textarea>
+                <label for="browser">What is your favorite internet browser?</label>
+                <select id="browser" name="browser">
+                    <option value="firefox">Firefox</option>
+                    <option value="chrome">Chrome</option>
+                    <option value="safari">Safari</option>
+                    <option value="edge">Edge</option>
+                </select>
+                <label for="pet">Do you have a household pet?</label>
+                <input type="checkbox" id="pet" name="pet">
+                <label for="feedback">List the places you have lived:</label>
+                <textarea id="feedback" name="feedback" rows="4" placeholder="Enter places you have lived here with city, state or country"></textarea>
             </fieldset>
-            <button>Submit</button>
+            <button type="submit">Submit Poll</button>
         </form>
     </main>
     <footer>

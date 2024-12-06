@@ -1,0 +1,92 @@
+* {
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+    background-color: #c1c7c1;
+}
+
+header h1 {
+    font-family:Arial, Helvetica, sans-serif;
+    color: #3b3b47;
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 900;
+}
+
+form {
+    width: 750px;
+    background-color: #e9f0ed;
+    padding: 40px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    display: grid;
+    margin: 0 auto;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    background-color: #d5d1ce; 
+    border: 1.5px solid #000;
+    border-radius: 10px;
+}
+
+legend {
+    font-family: Cambria;
+    padding: .75em;
+    width: 200px;
+    background-color: #3a3939;
+    border: 2px dotted #ffff;
+    color: #ffffff;
+}
+
+select, label, input, textarea {
+    padding: .5em;
+    font-size: 1.25rem;
+    text-align: left;
+    border-radius: 6px;
+}
+
+textarea {
+    width: 500px;
+    border: 1px solid #000;
+}
+
+button {
+    width: 200px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 1px solid #000;
+    border-radius: 6px;
+    box-shadow: 2 2 10;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    display:inline-block;
+    transform: scale(2);
+    margin-right: 10px;
+    color: #ffff;
+    border: 1 px solid #808080;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+
+button:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+}
