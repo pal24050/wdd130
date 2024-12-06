@@ -63,7 +63,7 @@ button {
     font-weight: bold;
     border: 1px solid #000;
     border-radius: 6px;
-    box-shadow: 2 2 10;
+    box-shadow: 2 2 10px;
 }
 
 input[type="radio"], input[type="checkbox"] {
@@ -71,7 +71,7 @@ input[type="radio"], input[type="checkbox"] {
     transform: scale(2);
     margin-right: 10px;
     color: #ffff;
-    border: 1 px solid #808080;
+    border: 1px solid #808080;
 }
 
 label {
