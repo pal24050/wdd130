@@ -194,7 +194,7 @@ form h2 {
         text-decoration: underline;
 }
 
-fieldset p {
+fieldset h2 {
         text-align: center;
         font-size: 1.5rem;
         box-sizing: border-box;
