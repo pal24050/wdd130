@@ -1,0 +1,319 @@
+:root {
+    --primary-color: #6e8894; /* slate gray */
+    --secondary-color: #2a2f4f; /* space cadet */
+    --accent-color-1: #8f775b; 
+    --accent-color-2: #ced4d3; /* floral white */
+}
+
+.bold-underline {
+        text-decoration: underline;
+}
+
+body {
+        font-family: kanit, static;
+}
+
+h1 h2 {
+        font-family: Sigmar one; 
+}
+   
+header {
+        background-color: var(--accent-color-1);
+        max-width: 100%;
+}
+
+.grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 2fr 6fr 1fr;
+        grid-template-rows: 120px;   
+        grid-template-columns: minmax (100px 6fr)    
+}
+
+.grid-container img {
+        display: grid;
+        grid-column: 2 / 3;
+        margin: 20px 0 20px 0;
+        border: 1px solid black;
+        width: 100px;
+        height: auto;
+        border-radius: 4px;
+}
+
+.grid-container ul {
+        display: flex;
+        grid-column: 4 / 5;
+        align-items: center;
+        margin: 40px 40px;
+        float: right;
+        list-style: none;
+        justify-content: center;
+}
+
+.grid-container li {
+        padding: 2px 8px;
+        border: 1px solid black;
+        border-radius: 3px;
+        width: 80px;
+        background-color: white;
+        color: var(--secondary-color);
+        text-align: center;
+        flex: 1 1 100%;
+        font-family: kanit, static;
+        font-weight: bold;
+}
+
+/* .grid-container a/li:hoover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+} */
+
+.grid-container a {
+        text-decoration: none;
+        font-family: kanit, static;
+        color: var(--secondary-color);
+        align-content: center;
+        font-size: 1rem;
+}
+
+/* main */
+
+
+.contact {
+        border: 2px solid #000;
+        padding: 20px;
+        background-color: var(--accent-color-2);
+        color: var(--secondary-color); 
+        text-align: center;          
+}
+
+.contact h1 {
+        text-align: center;
+        font-size: 2em;
+        text-decoration: underline;
+}
+
+.contact-us {
+        background-color: #fff;        
+        border: 2px solid #000;
+        border-radius: 6px;
+        width: 400px;
+        text-align: center;
+        margin: 0 auto;
+        
+}
+
+.contact-us h2 {
+        text-decoration: underline;
+        padding-bottom: 0;
+        line-height: .5;
+        padding-top: 6px;
+}
+
+.contact-us p {
+        font-size: 1.5rem;
+        line-height: 0;
+}
+
+.map {
+       scale: 75%;
+}
+
+/* meet our team */
+.team-container {
+        display: grid;
+        max-width: 100%;
+        padding: 10px;
+        background-color: var(--primary-color);
+        border-top: 5px solid var(--accent-color-1);
+}
+
+.team-container h2 {
+        margin: 3px;
+        text-align: center;
+        font-size: 2rem;
+        font-family: sigmar one, static;
+        color: var(--secondary-color);
+}
+
+ .image-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 190px;
+        justify-content: space-evenly;
+        gap: 20px;
+        width: 100%;
+        max-width: 100%;     
+ }
+
+ .image-grid figure {
+        box-sizing: border-box;
+        text-align: center;
+        background-color: var(--accent-color-2);
+        margin: 0;
+        padding: .5rem;
+        border-radius: 5px;
+        overflow: hidden;
+ }
+
+ .image-grid figure:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.image-grid figure img {
+        width: 90%;
+        height: 60%;
+        padding: 5px;
+        object-fit: cover;
+        border-radius: 3px;
+        flex: 1 1 100%;
+ }
+
+ .image-grid figcaption {
+        font-family: kanit, static;
+        font-weight: bold;
+        font-size: 1.1rem;
+        color: var(--secondary-color);
+ }
+
+ /* send us a message */
+
+form {
+        width: 800px;
+        margin: 10px auto;
+        padding: 1rem;
+        border: 3px solid #000000;
+        border-radius: 3px;
+        background-color: #efeceb;
+        display: grid; 
+}
+
+form h2 {
+        font-size: 2rem;
+        text-align: center;
+        text-decoration: underline;
+}
+
+fieldset p {
+        text-align: center;
+        font-size: 1.5rem;
+        box-sizing: border-box;
+        text-decoration: underline;
+}
+    
+fieldset {
+        border: 2px solid #000000;
+        padding: 1rem;
+        border-radius: 6px;
+}
+    
+legend {
+        font-size: 1.5rem;
+        padding: .5rem;
+        color: #455667;
+        font-weight: bold;
+}
+
+input[type="text"] {
+        width: 300px;
+        cursor: pointer;
+}
+
+input[type="email"] {
+        width: 400px;
+        cursor: pointer;
+}
+
+label, input, button, select, textarea {
+        font-family: Arial, Helvetica, sans-serif; 
+        /* padding inside elements */
+        padding: .5rem; 
+        font-size: 1.25rem;
+}
+
+.option-group input {
+        align-items: center;
+        vertical-align: middle;
+        margin: 10px;
+        /* display: column; */
+        
+} 
+
+.option-group label {
+        font-family: Arial, Helvetica, sans-serif; 
+        align-content: center;
+        vertical-align: middle;
+        font-size: 1.5rem;
+        display: inline-block;
+} 
+    
+input[type="radio"],
+input[type="checkbox"] {
+        display: inline-block;
+        height: 4rem;
+        width: 4rem;
+}
+
+textarea {
+        min-height: 10em;
+        min-width: 90%;
+        padding: .5em;
+        border-radius: 6px;     
+}
+    
+button {
+        margin: 1rem;
+        background-color: #393959;
+        color: #ffffff;
+        border: 2px solid #c0c0c0;
+        padding: .5rem;
+        font-size: 1.2rem;
+        width: 200px; 
+        border-radius: 4px;
+}
+    
+button:hover {
+        color: #393959;
+        background-color: white; 
+        transform: scale(1.05);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+  
+/* footer */
+.footer-container {
+        display: flex;
+        justify-content: space-between;
+        border-top: 3px solid var(--accent-color-1);
+        margin: 0;
+        color: var(--accent-color-2);
+        background-color: var(--secondary-color);
+        font-family: kanit, static, bold;
+        font-size: 2vw;
+        padding: 20px;
+}
+
+.footer-container p {
+        margin-left: 60px;
+}
+
+.social-links a {
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        float: right;
+        padding: 20px 
+}
+
+.social-links a img {
+        width: clamp(10px, 4vw, 40px);
+        height: auto;
+}
+
+.social-links a href:hoover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+} 
+ 
+
+        
+
