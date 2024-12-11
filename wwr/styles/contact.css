@@ -184,13 +184,12 @@ header {
  /* send us a message */
 
 form {
-        width: 800px;
-        margin: 10px auto;
+        max-width: 100%;
+        margin: 0 auto;
         padding: 1rem;
         border: 3px solid #000000;
         border-radius: 3px;
         background-color: #efeceb;
-        display: grid; 
 }
 
 form h2 {
@@ -202,7 +201,6 @@ form h2 {
 fieldset h2 {
         text-align: center;
         font-size: 1.5rem;
-        box-sizing: border-box;
         text-decoration: underline;
 }
     
@@ -219,54 +217,65 @@ legend {
         font-weight: bold;
 }
 
-input[type="text"] {
-        width: 300px;
-        cursor: pointer;
-}
-
-input[type="email"] {
-        width: 400px;
-        cursor: pointer;
-}
-
 label, input, button, select, textarea {
-        font-family: Arial, Helvetica, sans-serif; 
+        font-family: kanit static; 
         /* padding inside elements */
-        padding: .5rem; 
+        padding: .75rem; 
         font-size: 1.25rem;
+        cursor: pointer;
 }
 
-.option-group input {
-        display: flex;
-        align-items: center;
-        vertical-align: middle;
+.email-contact {
+        display: inline-block;
+        width: 600px;
+        margin-left: 100px;   
+}
+
+.email-contact input {
+        width: 400px;
+        text-align: left;
         margin: 10px;      
 } 
+.email-contact input[type="email"] {
+        width: 440px;
+        /* makes email line as long as name */
+}
+
+.option-group {
+        width: 600px;
+        margin: 0 auto;
+}
 
 .option-group label {
-        font-family: Arial, Helvetica, sans-serif; 
-        align-content: center;
-        vertical-align: middle;
-        font-size: 1.5rem;
         display: inline-block;
+        width: 500px;
+        padding: 6px;
+        font-size: 1.5rem;
 } 
-    
+
 input[type="radio"],
 input[type="checkbox"] {
-        display: inline-block;
-        height: 2rem;
-        width: 2rem;
+        padding: 25px;
+        height: 20px;
+        width: 20px;
+        margin-left: 35px;
+}
+       
+input[type="checkbox"] {
+        margin-right: 15px;
 }
 
 textarea {
-        min-height: 10em;
-        min-width: 90%;
-        padding: .5em;
-        border-radius: 6px;     
+        width: 600px;
+        border-radius: 5px;
+        margin-top: 10px;
+
 }
+
     
 button {
-        margin: 1rem;
+        margin-top: 20px;
+        margin-left: 40px;
         background-color: #393959;
         color: #ffffff;
         border: 2px solid #c0c0c0;
@@ -298,6 +307,13 @@ button:hover {
 
 .footer-container p {
         margin-left: 60px;
+}
+
+.footer-container a {
+        color: #fff;
+        text-decoration: none;
+        display: inline-block;
+        padding-top: 50px;
 }
 
 .social-links a {

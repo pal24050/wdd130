@@ -17,15 +17,14 @@
 }
 
 h1 h2 {
-        font-family: Sigmar one; 
+        font-family: Sigmar one;
+         
 } */
-  
-/* header */
+
 header {
         background-color:var(--accent-color-1);
         max-width: 100%;
 }
-
 .grid-container {
         display: grid;
         grid-template-columns: 1fr 1fr 2fr 6fr 1fr;
@@ -65,10 +64,10 @@ header {
         font-weight: bold;
 }
 
-/* .grid-container a/li:hoover {
+.grid-container li:hoover {
         transform: scale(1.05);
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-} */
+}
 
 .grid-container a {
         text-decoration: none;
@@ -78,9 +77,9 @@ header {
         font-size: 1rem;
 }
 
-/* main */
-/* hero about page*/
-.hero {
+/* end header */
+
+.hero-home {
         position: relative;
         width: 100%;
         height: auto;
@@ -88,114 +87,64 @@ header {
         align-content: center;
 }
 
-.hero img {
+.hero-home img {
         width: 100%;
         height: auto;
         object-fit: cover;
         border-radius: 3px;
 }
 
-.hero h1 {
+.hero-home h1 {
         color: #fff;
         font-family: sigmar one, static;
         font-size: 4vw;
-        padding: 10px;
+        padding: 5px 10px;
         position: absolute;
         align-content: center;
         top: 2%;
-        left: 18%;
-        background-color: rgba(0, 0, 0, 0.3);
+        left: 2%;
+        background-color: rgba(0, 0, 0, 0.5);
         border-radius: 6px;
 }
 
-.hero article {
+.hero-home h2 {
+        color: #fff;
+        font-family: sigmar one, static;
+        font-size: 4vw;
+        padding: 5px 10px;
         position: absolute;
-        top: 25%;
-        left: 8%;
-        max-width: 80%;
-        margin: 0 auto;
-        padding: 0 20px;
-        font-family: kanit, static;
-        font-size: 25px;
-        color: var(--secondary-color);
-        background-color:rgba(247, 244, 244, 0.8)
-}
-
-.hero article img {
-        position: relative;
-        float: right;
-        width: 200px;
-        height: auto;
         align-content: center;
-        justify-content: center;
-        padding-bottom: 1.5rem;
-}
-
-.hero h2 {
-        text-align: center;
-        font-family: sigmar one, static;
-}
-
-/* history about page */
-.container {
-        display: flex;
-        width: 100%;
-        background-color: var(--secondary-color);
-        box-sizing: border-box;
-        padding: 40px 20px;
-        border-top: 4px solid var(--accent-color-1);
-        margin-top: 0;
-}
-
-.container p {
-        margin: 0 auto;
-        font-family: kanit, static;
-        font-size: 20px;
-        line-height: 1.6;
-        color: var(--accent-color-2);
-        padding: 10px;   
-        align-content: center;  
-}        
-
-.image-container {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        margin-top: 30px;
-        max-width: fit-content;   
-}
-
-.image-container h2 {
-        position: absolute;
-        top: -1%;
+        bottom: 2%;
         left: 50%;
-        transform: translate(-50%, -50%);
-        color: var(--accent-color-2);
-        font-family: sigmar one, static;
-        font-size: 2rem;
-        margin: 0;
-        text-align: center;
+        background-color: rgba(0, 0, 0, .5);
+        border-radius: 6px;
 }
 
-.image-container img {
-        transform: scale(0.75);
-        transform-origin: center;
-        object-fit: cover;
+.ready {
+        position: relative;
+        width: 100%;
         height: auto;
-        width: auto;
-        border-radius: 5px;
+        overflow: hidden;
+        align-content: center;
 }
 
-figure {
-        margin: 0;
-        padding: .3rem;
-        box-sizing: border-box;
-        font-family: kanit, static;
-        color: var(--accent-color-2);
-} 
+.ready img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 3px;
+}
 
-/* adventure about page */
-.adventure-section {
+.ready a {
+        position: absolute;
+        text-align: center;
+        bottom: 2%;
+        left: 70%;
+        text-decoration: none;
+}
+
+/* index page what we offer */
+.offer-index-page {
         display: grid;
         max-width: 100%;
         padding: 30px;
@@ -203,7 +152,7 @@ figure {
         border-top: 5px solid var(--accent-color-1);
 }
 
-.adventure-section h2 {
+.offer-index-page h2 {
         margin: 3px;
         text-align: center;
         font-size: 2.5rem;
@@ -211,16 +160,16 @@ figure {
         color: var(--secondary-color);
 }
 
- .image-grid {
+ .image-grid-index {
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         justify-content: space-evenly;
         gap: 20px;
         width: 100%;
         max-width: 100%;     
  }
 
- .image-grid figure img {
+ .image-grid-index figure img {
         width: 100%;
         height: auto;
         object-fit: cover;
@@ -228,9 +177,11 @@ figure {
         flex: 1 1 100%;
  }
 
- .image-grid figure {
+ .image-grid-index figure {
         text-align: center;
-        font-size: 1rem;
+        font-size: 1.3rem;
+        color: #fff;
+        padding: .5rem;
         background-color: var(--secondary-color);
         border-radius: 5px;
         overflow: hidden;
@@ -238,10 +189,100 @@ figure {
         transition: transform 0.3s ease, box-shadow 0.3s ease;
  }
 
- .image-grid figure:hover {
+
+/* newsletter sign-up */
+form {
+        background-color: var(--primary-color);
+        padding: 10px;
+}
+
+fieldset {
+        border: 2px solid #000000;
+        padding: 1rem;
+        border-radius: 6px;
+        /* font-family: kanit static; */
+        font-size: 2rem;
+        background-color: var(--accent-color-2);
+        border-radius: 2px;
+        text-align: center;
+        margin-top: 40px;
+}
+
+    
+legend {
+        font-size: 1.5rem;
+        padding: .5rem;
+        color: #455667;
+        font-family: sigmar one;
+        background-color: var(--accent-color-2);
+        border: 2px solid #000000;
+        border-radius: 10px;
+        text-align: center;
+        margin-top: 40px;
+}
+
+input[type="radio"] {
+        display: none;
+}
+
+input[type="radio"] + label {
+        display: inline-block;
+        position: sticky;
+        font-family: kanit static;
+        justify-content: center;
+        width: 20px;
+        height: 20px;
+        border: 3px solid #000000;
+        border-radius: 50%;
+        background-color: #fff;
+        cursor: pointer;
+        margin-left: 20px;
+       
+}
+
+input[type="radio"]:checked + label {
+        background-color: var(--secondary-color);
+        border-color: var(--accent-color-2);
+}
+
+.email-group {
+        margin: 20px; 
+        display: inline-block;
+        
+} 
+
+.email-group label {
+        display: inline-block;
+        text-align: right;
+        width: 650px;
+        padding: 10px;      
+} 
+
+.email-group input {
+        width: 450px;
+        height: 30px;
+}
+
+.button {
+        margin: 1rem;
+        background-color: #393959;
+        color: #ffffff;
+        border: 2px solid #c0c0c0;
+        padding: .5rem;
+        font-size: 1.2rem;
+        width: 200px; 
+        border-radius: 4px;
+}
+/* use this button hoover in rafting.css     */
+.button:hover {
+        color: #393959;
+        background-color: #fff; 
+        border: 1.5px solid #000;
         transform: scale(1.05);
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
+  
+
 
 /* footer */
 .footer-container {
