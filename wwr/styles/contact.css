@@ -1,3 +1,5 @@
+/* combined */
+
 :root {
     --primary-color: #6e8894; /* slate gray */
     --secondary-color: #2a2f4f; /* space cadet */
@@ -70,11 +72,6 @@ header {
         font-weight: bold;
 }
 
-/* .grid-container a/li:hoover {
-        transform: scale(1.05);
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-} */
-
 .grid-container a {
         text-decoration: none;
         font-family: kanit, static;
@@ -82,6 +79,11 @@ header {
         align-content: center;
         font-size: 1rem;
 }
+
+/* .grid-container a:hoover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+} */
 
 /* main */
 .contact {
