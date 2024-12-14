@@ -513,21 +513,22 @@ label {
 }  
 
 .checks input[type="radio"] {
-        scale: 2;
+        height: 20px;
+        width: 20px;
         cursor: pointer;
 }
 
 .checks input[type="radio"] + label {
-        /* padding: 5px; */
         display: flex;
         flex-direction: row;
         align-items: center;
-        /* justify-content: start; */
-        /* vertical-align: middle; */
+        justify-content: start; 
+        vertical-align: middle;
 }
 
 input[type="checkbox"] {
-        scale: 2;
+        height: 25px;
+        width: 25px;
         justify-content: center;
         vertical-align: middle;
         margin: 0 0 0 20px;     
