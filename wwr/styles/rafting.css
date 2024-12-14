@@ -230,31 +230,24 @@ figure {
         color: var(--secondary-color);
 }
 
-.adventure-section h3 {
-        text-align: center;
-        font-size: 1.75rem;
-        font-family: kanit static;
-        color: var(--secondary-color);
-}
-
- .image-grid {
+.image-grid {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         justify-content: space-evenly;
         gap: 20px;
         width: 100%;
         max-width: 100%;     
- }
+}
 
- .image-grid figure img {
+.image-grid figure img {
         width: 100%;
         height: auto;
         object-fit: cover;
         border-radius: 3px;
         flex: 1 1 100%;
- }
+}
 
- .image-grid figure {
+.image-grid figure {
         text-align: center;
         font-size: 1rem;
         background-color: var(--secondary-color);
@@ -262,9 +255,9 @@ figure {
         overflow: hidden;
         box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
         transition: transform 0.3s ease, box-shadow 0.3s ease;
- }
+}
 
- .image-grid figure:hover {
+.image-grid figure:hover {
         transform: scale(1.05);
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
@@ -379,7 +372,7 @@ figure {
         color: var(--secondary-color);
 }
 
- .image-grid-team {
+.image-grid-team {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 230px;
@@ -389,7 +382,7 @@ figure {
         max-width: 100%;     
  }
 
- .image-grid-team figure {
+.image-grid-team figure {
         box-sizing: border-box;
         text-align: center;
         background-color: var(--accent-color-2);
@@ -408,7 +401,7 @@ figure {
         flex: 1 1 100%;
  }
 
- .image-grid-team figcaption {
+.image-grid-team figcaption {
         font-family: kanit, static;
         font-weight: bold;
         font-size: 1.1rem;
@@ -603,24 +596,24 @@ button:hover {
         color: var(--secondary-color);
 }
 
- .image-grid-index {
+.image-grid-index {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         justify-content: space-evenly;
         gap: 20px;
         width: 100%;
         max-width: 100%;     
- }
+}
 
- .image-grid-index figure img {
+.image-grid-index figure img {
         width: 100%;
         height: auto;
         object-fit: cover;
         border-radius: 3px;
         flex: 1 1 100%;
- }
+}
 
- .image-grid-index figure {
+.image-grid-index figure {
         text-align: center;
         font-size: 1.3rem;
         color: #fff;
@@ -630,7 +623,7 @@ button:hover {
         overflow: hidden;
         box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
         transition: transform 0.3s ease, box-shadow 0.3s ease;
- }
+}
 
 
 /* home page newsletter sign-up */
