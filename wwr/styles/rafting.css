@@ -37,7 +37,8 @@ header {
         border: 1px solid black;
         width: 100px;
         height: auto;
-        border-radius: 4px;
+        border-radius: 8px;
+        box-shadow: 0 0 30px rgb(231, 223, 210);
 }
 
 .grid-container ul {
@@ -73,7 +74,7 @@ header {
 
 /* main */
 /* hero about page*/
-.hero {
+.hero, .hero-home {
         position: relative;
         width: 100%;
         height: auto;
@@ -81,25 +82,49 @@ header {
         align-content: center;
 }
 
-.hero img {
+.hero img, .hero-home img {
         width: 100%;
         height: auto;
         object-fit: cover;
         border-radius: 3px;
 }
 
-.hero h1 {
+.hero h1, .ready h1, .hero-home h1 {
         color: #fff;
         font-family: sigmar one, static;
         font-size: 4vw;
-        padding: 10px;
+        padding: 10px 40px;
         position: absolute;
-        align-content: center;
-        top: 2%;
-        left: 18%;
+        text-align: center;
         background-color: rgba(0, 0, 0, 0.3);
         border-radius: 6px;
 }
+
+.hero h1 {
+        top: 2%;
+        left: 18%;
+}
+
+/* home page */
+.hero-home h1 {
+        padding: 5px 10px;
+        top: 2%;
+        left: 2%;
+}
+
+.hero-home h2 {
+        color: #fff;
+        font-family: sigmar one, static;
+        font-size: 4vw;
+        padding: 5px 10px;
+        position: absolute;
+        align-content: center;
+        bottom: 2%;
+        left: 50%;
+        background-color: rgba(0, 0, 0, .5);
+        border-radius: 6px;
+}
+ /* home page hero end */
 
 .hero article {
         position: absolute;
@@ -194,13 +219,21 @@ figure {
         padding: 30px;
         background-color: var(--accent-color-2);
         border-top: 5px solid var(--accent-color-1);
+        margin-bottom: 0;
 }
 
 .adventure-section h2 {
-        margin: 3px;
+        margin: 0 auto;
         text-align: center;
         font-size: 2.5rem;
         font-family: sigmar one, static;
+        color: var(--secondary-color);
+}
+
+.adventure-section h3 {
+        text-align: center;
+        font-size: 1.75rem;
+        font-family: kanit static;
         color: var(--secondary-color);
 }
 
@@ -234,6 +267,14 @@ figure {
  .image-grid figure:hover {
         transform: scale(1.05);
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.image-grid a {
+        text-decoration: none;
+}
+
+.image-grid a:visited figcaption {
+        color: var(--accent-color-2);
 }
 
 /* footer */
@@ -323,53 +364,51 @@ figure {
         display: grid;
         max-width: 100%;
         padding: 10px;
-        background-color: var(--primary-color);
+        border-right: 2px solid#000;
+        border-left: 2px solid#000;
+        background-color: var#fff;
         border-top: 5px solid var(--accent-color-1);
+        border-bottom: 5px solid var(--accent-color-1);
 }
 
 .team-container h2 {
-        margin: 3px;
+        margin: 6px;
         text-align: center;
         font-size: 2rem;
         font-family: sigmar one, static;
         color: var(--secondary-color);
 }
 
- .image-grid {
+ .image-grid-team {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 190px;
+        grid-template-rows: 230px;
         justify-content: space-evenly;
         gap: 20px;
         width: 100%;
         max-width: 100%;     
  }
 
- .image-grid figure {
+ .image-grid-team figure {
         box-sizing: border-box;
         text-align: center;
         background-color: var(--accent-color-2);
-        margin: 0;
+        margin: 0 0 30px;
         padding: .5rem;
         border-radius: 5px;
         overflow: hidden;
  }
 
- .image-grid figure:hover {
-        transform: scale(1.05);
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.image-grid figure img {
+.image-grid-team figure img {
         width: 90%;
-        height: 60%;
+        height: 75%;
         padding: 5px;
         object-fit: cover;
         border-radius: 3px;
         flex: 1 1 100%;
  }
 
- .image-grid figcaption {
+ .image-grid-team figcaption {
         font-family: kanit, static;
         font-weight: bold;
         font-size: 1.1rem;
@@ -381,10 +420,11 @@ figure {
 form {
         max-width: 100%;
         margin: 0 auto;
-        padding: 1rem;
+        padding: 20px;
         border: 3px solid #000000;
         border-radius: 3px;
-        background-color: #efeceb;
+        background-color: var(--primary-color);
+        /* padding: 10px; */
 }
 
 form h2 {
@@ -403,21 +443,35 @@ fieldset {
         border: 2px solid #000000;
         padding: 1rem;
         border-radius: 6px;
+        font-size: 2rem;
+        background-color: var(--accent-color-2);
+        text-align: center;
+        margin-top: 40px;
 }
     
 legend {
         font-size: 1.5rem;
-        padding: .5rem;
+        padding: 1rem;
         color: #455667;
-        font-weight: bold;
+        font-family: sigmar one;
+        background-color: var(--accent-color-2);
+        border: 2px solid #000000;
+        border-radius: 10px;
+        text-align: center;
+        margin-top: 40px;
 }
 
-label, input, button, select, textarea {
+input, button, select, textarea {
         font-family: kanit static; 
         /* padding inside elements */
         padding: .75rem; 
-        font-size: 1.25rem;
+        font-size: 1.5rem;
         cursor: pointer;
+}
+
+label {
+        font-family: kanit static; 
+        font-size: 1.5rem;    
 }
 
 .email-contact {
@@ -431,43 +485,62 @@ label, input, button, select, textarea {
         text-align: left;
         margin: 10px;      
 } 
+
 .email-contact input[type="email"] {
         width: 440px;
         /* makes email line as long as name */
 }
 
-.option-group {
-        width: 600px;
-        margin: 0 auto;
+.signup input[type="radio"] {
+        scale: 2;
+        gap: 40px;
+        margin-left: 20px;
+        background-color: #fff;
+        cursor: pointer;
 }
 
-.option-group label {
-        display: inline-block;
+.contact-group {
         width: 500px;
-        padding: 6px;
-        font-size: 1.5rem;
-} 
-
-input[type="radio"],
-input[type="checkbox"] {
-        padding: 25px;
-        height: 20px;
-        width: 20px;
-        margin-left: 35px;
+        margin: 0 auto;
+        font-family: kanit static;
 }
-       
+
+.checks {
+        width: 550px;
+        height: 250px;
+        margin-left: 80px;
+        margin-top: 40px;
+}  
+
+.checks input[type="radio"] {
+        scale: 2;
+        cursor: pointer;
+}
+
+.checks input[type="radio"] + label {
+        /* padding: 5px; */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        /* justify-content: start; */
+        /* vertical-align: middle; */
+}
+
 input[type="checkbox"] {
-        margin-right: 15px;
+        scale: 2;
+        justify-content: center;
+        vertical-align: middle;
+        margin: 0 0 0 20px;     
 }
 
 textarea {
         width: 600px;
+        height: 100px;
         border-radius: 5px;
         margin-top: 10px;
-
 }
    
-button {
+.button {
         margin-top: 20px;
         margin-left: 40px;
         background-color: #393959;
@@ -487,4 +560,149 @@ button:hover {
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
          
+/* Home page css */
+.ready {
+        position: relative;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        align-content: center;
+}
 
+.ready img {
+        width: 100%;
+        height: auto;
+        border-radius: 3px;
+}
+
+.ready a {
+        position: absolute;
+        text-align: center;
+        bottom: 10%;
+        left: 60%;
+        text-decoration: none;
+}
+
+/* index/home page what we offer */
+.offer-index-page {
+        display: grid;
+        max-width: 100%;
+        padding: 30px;
+        background-color: var(--accent-color-2);
+        border-top: 5px solid var(--accent-color-1);
+}
+
+.offer-index-page h2 {
+        margin: 3px;
+        text-align: center;
+        font-size: 2.5rem;
+        font-family: sigmar one, static;
+        color: var(--secondary-color);
+}
+
+ .image-grid-index {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-evenly;
+        gap: 20px;
+        width: 100%;
+        max-width: 100%;     
+ }
+
+ .image-grid-index figure img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 3px;
+        flex: 1 1 100%;
+ }
+
+ .image-grid-index figure {
+        text-align: center;
+        font-size: 1.3rem;
+        color: #fff;
+        padding: .5rem;
+        background-color: var(--secondary-color);
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+ }
+
+
+/* home page newsletter sign-up */
+
+/* form, fieldset, legend, radio under send message section */
+ 
+.email-group {
+        margin: 20px; 
+        display: inline-block;      
+} 
+
+.email-group label {
+        display: inline-block;
+        text-align: right;
+        width: 650px;
+        padding: 10px;      
+} 
+
+.email-group input {
+        width: 450px;
+        height: 30px;
+}
+
+/* trips page ready h1 */
+.ready h1 {
+        top: 10%;
+}
+
+.ready h2 {
+        color: #fff;
+        font-family: kanit static;
+        font-size: 3vw;
+        font-weight: bold;
+        padding: 10px 40px;
+        position: absolute;
+        text-align: center;
+        background-color: rgba(36, 36, 36, 0.3);
+        border-radius: 6px;
+        top: 35%;
+        left: 25%;
+}
+
+/* table data */
+.table {
+        background-color: var(--primary-color);
+        padding: 10px;
+}
+
+.table h2 {
+        margin: 0 auto;
+        text-align: center;
+        font-size: 2.5rem;
+        font-family: sigmar one, static;
+        color: var(--secondary-color);
+}
+
+.table caption {
+        font-family: kanit static;
+        font-size: 1.5rem;
+}
+
+.table table {
+        width: 400px;
+        text-align: center;
+        border: 2px solid#000;
+        background-color: var(--accent-color-2);
+        align-items: center;
+        margin: 0 auto;
+}
+
+th, td {
+        border: 1px solid#000;
+        padding: 5px 10px;
+}
+
+.table table, th, td {
+        border-collapse: collapse;
+}
