@@ -366,7 +366,7 @@ figure {
         padding: 10px;
         border-right: 2px solid#000;
         border-left: 2px solid#000;
-        background-color: var#fff;
+        background-color:#fff;
         border-top: 5px solid var(--accent-color-1);
         border-bottom: 5px solid var(--accent-color-1);
 }
@@ -492,7 +492,9 @@ label {
 }
 
 .signup input[type="radio"] {
-        scale: 2;
+        height: 25px;
+        width: 25px;
+        vertical-align: middle;
         gap: 40px;
         margin-left: 20px;
         background-color: #fff;
